@@ -1,0 +1,32 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="flickering_experiments",
+    version="0.1.0",
+    packages=find_packages(exclude=["legacy", "legacy.*"]),
+    description="Membrane flickering analysis tools: contour tracking, fitting, and automated imaging.",
+    python_requires=">=3.9",
+    install_requires=[
+        "numpy",
+        "scipy",
+        "numba",
+        "opencv-python",
+        "matplotlib",
+        "pathos",
+        "tqdm",
+        "more-itertools",
+        "numpyencoder",
+        "readlif",
+        "pandas",
+        "pillow",
+        "psutil",
+        "filelock",
+        "statsmodels",
+        "pyserial",
+        "ffmpeg-python",
+        "pyinotify",
+        "scikit-learn>=1.3.0,<1.4.0",
+        "avifilelib",
+        "dict_hash",
+    ],
+)
